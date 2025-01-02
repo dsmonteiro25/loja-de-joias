@@ -1,0 +1,58 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #b8860b; /* Dourado discreto */
+  }
+  
+  .icons a {
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
+  }
+  
+  .icons a:hover {
+    transform: scale(1.1);
+  }
+  

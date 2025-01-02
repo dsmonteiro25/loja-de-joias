@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joias Lux - Home</title>
+    <link rel="stylesheet" href="./src/styles/estilo.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="./src/pages/home.html" target="content-frame">Joias Lux</a>
+            </div>
+            <nav class="nav">
+                <a href="./src/pages/home.html" target="content-frame">Home</a>
+                <a href="./src/pages/colecoes.html" target="content-frame">Coleções</a>
+                <a href="./src/pages/sobre.html" target="content-frame">Sobre</a>
+                <a href="./src/pages/contato.html" target="content-frame">Contato</a>
+            </nav>
+            <div class="icons">
+                <a href="" class="cart-icon">🛒</a>
+                <a href="" class="user-icon">👤</a>
+            </div>
+        </div>
+    </header>
     
+    <main>
+        <iframe name="content-frame" src="./src/pages/home.html" frameborder="0" width="100%" height="800px"></iframe>
+    </main>
+
 </body>
 </html>
