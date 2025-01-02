@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contato {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.contato-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #b8860b;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    padding: 14px 30px;
+    background-color: #b8860b;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #a97f06;
+}
+
+.contato-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info h2 {
+    font-size: 28px;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b8860b;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contato-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .contato {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .contato-form {
+        padding: 30px;
+    }
+
+    .btn-enviar {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}

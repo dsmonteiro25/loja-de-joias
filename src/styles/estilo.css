@@ -1,8 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
   }
   
   body {
@@ -15,6 +18,11 @@
     border-bottom: 1px solid #ddd;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
   }
   
   .container {
@@ -41,7 +49,7 @@
   }
   
   .nav a:hover {
-    color: #b8860b; /* Dourado discreto */
+    color: #b8860b; 
   }
   
   .icons a {
@@ -56,3 +64,10 @@
     transform: scale(1.1);
   }
   
+  iframe {
+    width: 100%;
+    border: none;
+    display: block;
+    flex-grow: 1;  
+    height: 100vh;  
+}
