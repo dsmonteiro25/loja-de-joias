@@ -1,0 +1,62 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4; 
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    padding-top: 60px;
+    font-size: 42px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+h2 {
+    margin: 0; /* Remove margem padrão */
+    position: absolute; /* Permite posicionamento relativo à div pai */
+    bottom: 15px; /* Define o espaçamento de 15px em relação à borda inferior */
+    text-align: center;
+    font-size: 25px;
+    width: 100%; /* Garante que o texto ocupe toda a largura da div */
+}
+
+
+.JoiaImg{
+    padding-top: 25px;
+    width: 100%; /* Adapta a largura ao contêiner */
+    max-width: 300px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 20px; /* Arredonda os cantos */
+    object-fit: cover; /* Ajusta o conteúdo dentro de um contêiner */
+    display: block; /* Remove o espaço ao redor de imagens inline */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    
+}
+.container {
+    padding-top: 50px;
+    display: flex;
+    gap: 100px; /* Espaçamento entre as divs */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-colection {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    
+}
+.box-colection:hover {
+    transform: scale(1.10); /* Aumenta ligeiramente ao passar o mouse */
+  }
