@@ -18,30 +18,30 @@ h1 {
     text-align: center;
 }
 h2 {
-    margin: 0; /* Remove margem padrão */
-    position: absolute; /* Permite posicionamento relativo à div pai */
-    bottom: 15px; /* Define o espaçamento de 15px em relação à borda inferior */
+    margin: 0; 
+    position: absolute; 
+    bottom: 15px; 
     text-align: center;
     font-size: 25px;
-    width: 100%; /* Garante que o texto ocupe toda a largura da div */
+    width: 100%; 
 }
 
 
 .JoiaImg{
     padding-top: 25px;
-    width: 100%; /* Adapta a largura ao contêiner */
-    max-width: 300px; /* Limita o tamanho máximo */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 20px; /* Arredonda os cantos */
-    object-fit: cover; /* Ajusta o conteúdo dentro de um contêiner */
-    display: block; /* Remove o espaço ao redor de imagens inline */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 100%;
+    max-width: 300px;
+    height: auto; 
+    border-radius: 20px;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
     
 }
 .container {
     padding-top: 50px;
     display: flex;
-    gap: 100px; /* Espaçamento entre as divs */
+    gap: 100px; 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
