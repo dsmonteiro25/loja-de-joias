@@ -10,13 +10,13 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="./src/pages/home.html" target="content-frame">Joias Lux</a>
+                <a href="#home">Joias Lux</a>
             </div>
             <nav class="nav">
-                <a href="./src/pages/home.html" target="content-frame">Home</a>
-                <a href="./src/pages/colecoes.html" target="content-frame">Coleções</a>
-                <a href="./src/pages/sobre.html" target="content-frame">Sobre</a>
-                <a href="./src/pages/contato.html" target="content-frame">Contato</a>
+                <a href="#home">Home</a>
+                <a href="#colecoes">Coleções</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
             </nav>
             <div class="icons">
                 <a href="" class="cart-icon">🛒</a>
@@ -24,8 +24,126 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <iframe name="content-frame" src="./src/pages/home.html" frameborder="0" width="100%" ></iframe>
-    </main>
+
+    <section id="home">
+        <div class="banner">
+            <div class="container">
+                <h1>Descubra o Brilho Perfeito</h1>
+                <p>Joias exclusivas para momentos inesquecíveis.</p>
+                <a href="" class="btn">Ver Coleções</a>
+            </div>
+        </div>
+        <div class="destaques">
+            <div class="container-destaques">
+                <h2>Destaques</h2>
+                <div class="grid">
+                    <div class="item">
+                        <img src="./src/assets/img/anel.jpg" alt="Anel de Ouro">
+                        <h3>Anel de Ouro</h3>
+                        <p>Brilhe com nosso anel de ouro 18k.</p>
+                    </div>
+                    <div class="item">
+                        <img src="./src/assets/img/colar.jpg" alt="Colar de Pérolas">
+                        <h3>Colar de Pérolas</h3>
+                        <p>Elegância atemporal com pérolas naturais.</p>
+                    </div>
+                    <div class="item">
+                        <img src="./src/assets/img/relogio.jpg" alt="Relógio Luxo">
+                        <h3>Relógio de Luxo</h3>
+                        <p>Perfeito para completar seu visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colecoes" class="colecoes">
+        <h1>Nossas Coleções</h1>
+        <div class="container-colecoes">
+            <div class="box-colection">
+                <img src="./src/assets/img/JoiaModerna.jpg" alt="JoiaModerna" class="JoiaImg">
+                <h2>Modernas</h2>
+            </div>
+            <div class="box-colection">
+                <img src="./src/assets/img/JoiaClassica.jpg" alt="JoiaClassica" class="JoiaImg">
+                <h2>Clássicas</h2>
+            </div>
+            <div class="box-colection">
+                <img src="./src/assets/img/JoiaMasculina.jpg" alt="JoiaMasculina" class="JoiaImg">
+                <h2>Masculinas</h2>
+            </div>
+            <div class="box-colection">
+                <img src="./src/assets/img/JoiaRomantica.jpg" alt="JoiaRomantica" class="JoiaImg">
+                <h2>Românticas</h2>
+            </div>
+            <div class="box-colection">
+                <img src="./src/assets/img/JoiaInfantil.jpg" alt="JoiaInfantil" class="JoiaImg">
+                <h2>Infantis</h2>
+            </div>
+            <div class="box-colection">
+                <img src="./src/assets/img/JoiaEtinica.jfif" alt="JoiaEtinica" class="JoiaImg">
+                <h2>Étnicas</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h1>Sobre a Joias Lux</h1>
+        <p>Com elegância e sofisticação, nós da Joias Lux trazemos para você as mais deslumbrantes joias, criadas com materiais nobres e com um toque de exclusividade.</p>
+        <div class="historia">
+            <h2>Nossa História</h2>
+            <p>A Joias Lux nasceu do desejo de proporcionar aos nossos clientes a experiência de brilhar. Desde o início, nossa missão sempre foi criar peças que encantam e duram, acompanhando cada momento especial da vida de quem as usa.</p>
+        </div>
+        <div class="missao">
+            <h2>Missão</h2>
+            <p>Transformar cada olhar em admiração, oferecendo joias que tragam beleza, sofisticação e autenticidade, com um atendimento personalizado para encantar nossos clientes.</p>
+        </div>
+        <div class="visao">
+            <h2>Visão</h2>
+            <p>Ser referência no mercado de joias de luxo, reconhecida por sua qualidade, design exclusivo e por proporcionar aos nossos clientes a verdadeira essência da elegância.</p>
+        </div>
+        <div class="valores">
+            <h2>Valores</h2>
+            <ul>
+                <li>Qualidade e exclusividade em cada peça.</li>
+                <li>Atendimento personalizado para cada cliente.</li>
+                <li>Compromisso com a ética e responsabilidade social.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="contato-container">
+            <h1>Entre em Contato</h1>
+            <p>Tem alguma dúvida ou deseja saber mais sobre nossos produtos? Estamos aqui para ajudar!</p>
+
+            <form  class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+
+            <div class="contato-info">
+                <h2>Informações de Contato</h2>
+                <p><strong>Telefone:</strong> (98) 1234-5678</p>
+                <p><strong>E-mail:</strong> contato@joiaslux.com</p>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado</p>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
