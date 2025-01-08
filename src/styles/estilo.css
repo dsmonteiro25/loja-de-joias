@@ -167,11 +167,6 @@ h1 {
   padding: 80px 20px;
   text-align: center;
 }
-.container-colecoes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, fr));
-  gap: 30px;
-}
 
 .container-colecoes {
   display: grid;
@@ -200,6 +195,8 @@ h1 {
   object-fit: cover;
 }
 
+
+
 /* Sobre */
 .sobre {
   padding: 80px 20px;
@@ -207,7 +204,6 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
-
 
 
 .sobre p {
@@ -281,6 +277,7 @@ h1 {
   .nav a {
       display: block;
       margin: 10px 0;
+      font-size: 15px;
   }
 
   .banner h1 {
@@ -289,5 +286,28 @@ h1 {
 
   .banner p {
       font-size: 18px;
+  }
+  
+  .box-colection {
+      width: 85%; 
+  }
+
+  .JoiaImg {
+      height: auto; 
+  }
+  .box-colection h2{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .container-destaques h2{
+    font-size: 30px;
+  }
+  .destaques h3{
+    font-size: 20px;
+  }
+  .item{
+    width: 85%;
   }
 }
