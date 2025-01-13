@@ -195,8 +195,6 @@ h1 {
   object-fit: cover;
 }
 
-
-
 /* Sobre */
 .sobre {
   padding: 80px 20px;
@@ -263,6 +261,84 @@ h1 {
   background-color: #a07309;
 }
 
+.depoimentos {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.container-depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.depoimento {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.depoimento-usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.blog {
+  padding: 40px 20px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.container-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.post p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-leia-mais {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b8860b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+  background-color: #a07309;
+}
+
+.icon-usuario {
+  font-size: 40px;
+  color: #aaa;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .container {
@@ -279,7 +355,6 @@ h1 {
       margin: 10px 0;
       font-size: 15px;
   }
-
   .banner h1 {
       font-size: 36px;
   }
