@@ -12,3 +12,18 @@ document.addEventListener('click', function (event) {
     nav.classList.remove('show');
   }
 });
+
+function openModal(title, imageSrc, description, price) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalImage').src = imageSrc;
+  document.getElementById('modalDescription').textContent = description;
+  document.getElementById('modalPrice').textContent = price;
+
+  document.getElementById('modalOverlay').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').style.display = 'none';
+}
+
+loadModal();

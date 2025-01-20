@@ -1,3 +1,4 @@
+<!-- Dupla Evanildo Macedo e Daniel Monteiro -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -38,17 +39,17 @@
             <div class="container-destaques">
                 <h2>Destaques</h2>
                 <div class="grid">
-                    <div class="item">
+                    <div class="item"  onclick="openModal('Anel de Ouro', './src/assets/img/anel.jpg', 'Brilhe com nosso anel de ouro 18k.', 'R$ 1.500')">
                         <img src="./src/assets/img/anel.jpg" alt="Anel de Ouro">
                         <h3>Anel de Ouro</h3>
                         <p>Brilhe com nosso anel de ouro 18k.</p>
                     </div>
-                    <div class="item">
+                    <div class="item"  onclick="openModal('Colar de Pérolas', './src/assets/img/colar.jpg', 'Elegância atemporal com pérolas naturais.', 'R$ 2.800')">
                         <img src="./src/assets/img/colar.jpg" alt="Colar de Pérolas">
                         <h3>Colar de Pérolas</h3>
                         <p>Elegância atemporal com pérolas naturais.</p>
                     </div>
-                    <div class="item">
+                    <div class="item"  onclick="openModal('Relógio de Luxo', './src/assets/img/relogio.jpg', 'Perfeito para completar seu visual.', 'R$ 5.600')">
                         <img src="./src/assets/img/relogio.jpg" alt="Relógio Luxo">
                         <h3>Relógio de Luxo</h3>
                         <p>Perfeito para completar seu visual.</p>
@@ -61,27 +62,27 @@
     <section id="colecoes" class="colecoes">
         <h1>Nossas Coleções</h1>
         <div class="container-colecoes">
-            <div class="box-colection">
+            <div class="box-colection" onclick="openModal('Modernas', './src/assets/img/JoiaModerna.jpg', 'Modernas e elegantes.', 'R$ 3.000')">
                 <img src="./src/assets/img/JoiaModerna.jpg" alt="JoiaModerna" class="JoiaImg">
                 <h2>Modernas</h2>
             </div>
-            <div class="box-colection">
+            <div class="box-colection" onclick="openModal('Clássicas', './src/assets/img/JoiaClassica.jpg', 'Clássicas e sofisticadas.', 'R$ 2.500')">
                 <img src="./src/assets/img/JoiaClassica.jpg" alt="JoiaClassica" class="JoiaImg">
                 <h2>Clássicas</h2>
             </div>
-            <div class="box-colection">
+            <div class="box-colection" onclick="openModal('Masculinas', './src/assets/img/JoiaMasculina.jpg', 'Masculinas e elegantes.', 'R$ 2.000')">
                 <img src="./src/assets/img/JoiaMasculina.jpg" alt="JoiaMasculina" class="JoiaImg">
                 <h2>Masculinas</h2>
             </div>
-            <div class="box-colection">
+            <div class="box-colection" onclick="openModal('Romanticas', './src/assets/img/JoiaRomantica.jpg', 'Românticas e sofisticadas.', 'R$ 3.500')">
                 <img src="./src/assets/img/JoiaRomantica.jpg" alt="JoiaRomantica" class="JoiaImg">
                 <h2>Românticas</h2>
             </div>
-            <div class="box-colection">
+            <div class="box-colection" onclick="openModal('Infantis', './src/assets/img/JoiaInfantil.jpg', 'Infantis e elegantes.', 'R$ 1.500')">
                 <img src="./src/assets/img/JoiaInfantil.jpg" alt="JoiaInfantil" class="JoiaImg">
                 <h2>Infantis</h2>
             </div>
-            <div class="box-colection">
+            <div class="box-colection" onclick="openModal('Étnicas', './src/assets/img/JoiaEtinica.jfif', 'Étnicas e sofisticadas.', 'R$ 2.000')">
                 <img src="./src/assets/img/JoiaEtinica.jfif" alt="JoiaEtinica" class="JoiaImg">
                 <h2>Étnicas</h2>
             </div>
@@ -202,6 +203,17 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <img id="modalImage" src="" alt="Produto">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p class="price" id="modalPrice"></p>
+        </div>
+    </div>
+    <!-- Rodape -->
     <footer class="footer">
         <div class="container-footer">
             <p>&copy; 2025 Joias Luxo. Todos os direitos reservados.</p>
