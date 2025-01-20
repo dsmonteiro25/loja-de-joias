@@ -26,7 +26,8 @@ function closeModal() {
   document.getElementById('modalOverlay').style.display = 'none';
 }
 
-loadModal();
+//loadModal();
+
 
 const container = document.querySelector('.container-blog');
   const postsArray = Array.from(container.children);
@@ -39,5 +40,6 @@ const container = document.querySelector('.container-blog');
       index = (index + 1) % postsArray.length;
   }
   
-  setInterval(showNextPost, 3000); // Troca a cada 3 segundos
+  setInterval(showNextPost, 4000); 
+
   showNextPost();
