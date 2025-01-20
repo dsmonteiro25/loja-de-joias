@@ -27,3 +27,17 @@ function closeModal() {
 }
 
 loadModal();
+
+const container = document.querySelector('.container-blog');
+  const postsArray = Array.from(container.children);
+  let index = 0;
+  
+  function showNextPost() {
+      postsArray.forEach((post, i) => {
+          post.style.display = i === index ? 'block' : 'none';
+      });
+      index = (index + 1) % postsArray.length;
+  }
+  
+  setInterval(showNextPost, 3000); // Troca a cada 3 segundos
+  showNextPost();
