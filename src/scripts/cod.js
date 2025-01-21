@@ -13,11 +13,11 @@ document.addEventListener('click', function (event) {
   }
 });
 
-function openModal(title, imageSrc, description, price) {
+function openModal(title, imageSrc, description, preco) {
   document.getElementById('modalTitle').textContent = title;
   document.getElementById('modalImage').src = imageSrc;
   document.getElementById('modalDescription').textContent = description;
-  document.getElementById('modalPrice').textContent = price;
+  document.getElementById('modalPrice').textContent = preco;
 
   document.getElementById('modalOverlay').style.display = 'flex';
 }
